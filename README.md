@@ -1,4 +1,5 @@
-# gizem_tic
+# Carboy App
 
-Hesap işlemleri
+This is carboy sell app i'm developing for my family.
+If you see this massege send help 😂
 
