@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'bezierContainer.dart';
+import 'customCompoment/bezierContainer.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage(
@@ -125,7 +125,6 @@ class _LoginPageState extends State<LoginPage> {
           text: TextSpan(
               text: 'G',
               style: GoogleFonts.portLligatSans(
-                textStyle: Theme.of(context).textTheme.display1,
                 fontSize: 40,
                 fontWeight: FontWeight.w700,
                 color: Color(0xff10e4dd),
@@ -152,7 +151,6 @@ class _LoginPageState extends State<LoginPage> {
           text: TextSpan(
               text: 'T',
               style: GoogleFonts.portLligatSans(
-                textStyle: Theme.of(context).textTheme.display1,
                 fontSize: 30,
                 fontWeight: FontWeight.w700,
                 color: Color(0xff10e4dd),
@@ -228,7 +226,6 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
           ),
-          Positioned(top: 40, left: 0, child: _backButton()),
         ],
       ),
     ));
