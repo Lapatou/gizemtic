@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 import 'customComponents/bezierContainer.dart';
 import 'customComponents/customWidgets.dart';
 
-class LoginPage extends StatefulWidget {
-  LoginPage(
+class SingInPage extends StatefulWidget {
+  SingInPage(
       {this.title =
           "null geldi"}); //todo neden title in null gelemediğini kontrol et
 
   final String title;
 
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _SingInPageState createState() => _SingInPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _SingInPageState extends State<SingInPage> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -37,21 +37,8 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(height: height * .2),
                   title(),
                   SizedBox(height: 50),
-                  emailPasswordWidget(),
-                  SizedBox(height: 20),
-                  InkWell(
-                    onTap: () {}, //todo giriş yap butonu işlev
-                    child: submitButton(context),
-                  ),
-                  Container(
-                    padding: EdgeInsets.symmetric(vertical: 10),
-                    alignment: Alignment.centerRight,
-                    child: Text('Şifrenizi mi unuttunuz?',
-                        style: TextStyle(
-                            fontSize: 14, fontWeight: FontWeight.w500)),
-                  ),
-                  SizedBox(height: height * .055),
-                  createAccountLabel(),
+                  //todo singIn Form will be build here
+                  submitButton(context),
                 ],
               ),
             ),

@@ -74,6 +74,7 @@ Widget submitButton(context) {
             end: Alignment.centerRight,
             colors: [Color(0xff48ecfb), Color(0xff10e4e4)])),
     child: Text(
+      //todo button inkwell not working
       'Giriş Yap',
       style: TextStyle(fontSize: 20, color: Colors.white),
     ),
